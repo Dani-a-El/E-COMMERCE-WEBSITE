@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic IT Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background: #3a4045; 
+            color: white; 
+            text-align: center; overflow-x: hidden; display: flex; }
+        .container { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: 340px; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; text-transform: uppercase; text-shadow: 0 0 15px cyan; }
+        p { max-width: 600px; font-size: 1.2em; opacity: 0.8; margin-bottom: 30px; }
+        .floating-image { width: 200px; animation: float 4s ease-in-out infinite; filter: drop-shadow(0 0 20px cyan); }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        .services { display: flex; justify-content: center; flex-wrap: wrap; margin-left: 240px; margin-top: 30px;}
+        .service-card { background: rgba(0, 0, 0, 0.8); border-radius: 10px; padding: 20px; width: 250px; margin: 15px; box-shadow: 0 0 15px cyan; transform: perspective(800px) rotateY(0); transition: transform 0.5s, box-shadow 0.5s; cursor: pointer; }
+        .service-card img { width: 100%; border-radius: 10px; }
+        .service-card h3 { margin: 10px 0; font-size: 1.5em; text-shadow: 0 0 10px cyan; }
+        .service-card p { font-size: 0.9em; opacity: 0.8; }
+        .service-card:hover { transform: perspective(800px) rotateY(10deg) scale(1.05); box-shadow: 0 0 30px cyan; filter: brightness(1.2); }
+        .learn-more {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #42a5f5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .learn-more:hover {
+            background-color: #1e88e5;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background:             
+            background-color: #1e1e1e;
+            color: white;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            padding: 12px;
+            color: #a0c4ff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background: #283593;
+            color: #e6f4ff;
+        }
+        .logo-point {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            background-color: #42a5f5; /* Example logo color */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body;">
+    <nav class="sidebar">
+        <div class="logo-point"></div>
+        <ul>
+            <li><a href="HOME.html">🏠 Home</a></li>
+            <li><a href="product.html">💻 Products</a></li>
+            <li><a href="ABOUT US.html">📌 About Us</a></li>
+            <li><a href="CART.html">🛒 Cart</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Devine Computer World</h1>
+        <p>Providing cutting-edge technology solutions: Futuristic IT Services<br>
+            🖥 Computer Sales | 🌐 Networking | 🏗 Web & System Development | 🖥 Software Engineering</p>
+        <img src="3D Reality Futuristic Smart AR Glasses.jpeg" class="floating-image" alt="3D Tech">
+    </div>
+    <div class="services">
+        <div class="service-card" onclick="window.location.href='products.html#computer-sales'">
+            <img src="Things Before Choosing the Touchscreen Laptop.jpeg" alt="Computer Sales">
+            <h3>Computer Sales</h3>
+            <p>High-performance desktops, laptops, and accessories.</p>
+            <a href="product.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card" onclick="window.location.href='product.html'">
+            <img src="FIBRA ÓPTICA.jpeg" alt="Networking">
+            <h3>Networking</h3>
+            <p>Reliable and secure network setups for businesses.</p>
+            <a href="product.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card" onclick="window.location.href='product.html'">
+            <img src="C:\Users\EL\OneDrive\Desktop\WORK\GROUP 8 PROJECT\web.jpeg" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>Modern and scalable websites for all industries.</p>
+            <a href="product.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card" onclick="window.location.href='product.html'">
+            <img src="C:\Users\EL\OneDrive\Desktop\WORK\GROUP 8 PROJECT\Download premium png of PNG Computer laptop portability_ about png, transparent png, cartoon, people, and sports 12200260.jpeg" alt="Software Development">
+            <h3>Software Development</h3>
+            <p>Custom software solutions tailored to your needs.</p>
+            <a href="product.html" class="learn-more">Learn More</a>
+        </div>
+    </div>
+    
+
+    <h1 id="greeting"></h1>
+    <script>
+        function setGreeting() {
+            let hours = new Date().getHours();
+            let message = "Welcome to Divine Computer World!";
+            if (hours < 12) message = "Good Morning! " + message;
+            else if (hours < 18) message = "Good Afternoon! " + message;
+            else message = "Good Evening! " + message;
+            
+            document.getElementById("greeting").innerText = message;
+        }
+    
+        setGreeting();
+    </script>    
+</body>
+</html>

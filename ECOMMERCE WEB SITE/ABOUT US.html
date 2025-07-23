@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Divine Computer World</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #3a4045;
+            color: #e0e0e0;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #1e1e1e; 
+            color: white;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            padding: 12px;
+            color: #a0c4ff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background: #283593;
+            color: #e6f4ff;
+        }
+
+        .cart-icon {
+            width: 30px;
+            height: 30px;
+            filter: invert(70%) sepia(20%) saturate(200%) hue-rotate(180deg) brightness(100%) contrast(90%);
+        }
+
+        .content {
+            margin-left: 240px;
+            padding: 30px;
+            width: calc(100% - 240px);
+        }
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .team-member {
+            background: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;
+            width: 300px;
+        }
+
+        .team-member img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            color: #a0c4ff;
+        }
+
+        .team-member p {
+            color: #b0bec5;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="HOME.html">🏠 Home</a></li>
+            <li><a href="product.html">💻 Products</a></li>
+            <li><a href="ABOUT US.html">📌 About Us</a></li>
+            <li><a href="CART.html">🛒 Cart</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>About Us</h1>
+        <p>Divine Computer World is your one-stop shop for all your computing needs. We are passionate about providing high-quality products and exceptional customer service.</p>
+
+        <h2>Meet Our Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <img src="PAUL.jpg" alt="CEO">
+                <h3>Paul Musumba</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="DANI.jpg" alt="Manager">
+                <h3>Dani</h3>
+                <p>Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="DOREEN.jpg" alt="Sales">
+                <h3>Doreen</h3>
+                <p>Sales Representative</p>
+            </div>
+            <div class="team-member">
+                <img src="support.jpg" alt="Support">
+                <h3>Dorothy</h3>
+                <p>uUI developer</p>
+            </div>
+            <div class="team-member">
+                <img src="RONALD.jpg" alt="Support">
+                <h3>RONALD</h3>
+                <p>Front-end developer</p>
+            </div>
+            <div class="team-member">
+                <img src="RUTH.jpg" alt="Support">
+                <h3>RUTH</h3>
+                <p>Back-end developer</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

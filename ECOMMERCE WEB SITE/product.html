@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Divine Computer World</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3a4045; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #1e1e1e; /* Dark blue sidebar */
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            color: #a0c4ff; /* Light blue heading */
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 10px;
+            color: #a0c4ff; /* Light blue links */
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar li a:hover {
+            background-color: #283593; /* Darker blue on hover */
+        }
+
+        .content {
+            flex-grow: 1;
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .product-card {
+            background-color: #282828; /* Dark card background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            color: #e0e0e0; /* Light text color */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #a0c4ff; /* Light blue heading */
+        }
+
+        .product-card p {
+            color: #b0bec5; /* Lighter text color */
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: #42a5f5; /* Blue button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #1e88e5; /* Darker blue on hover */
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .logo-point {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #42a5f5; /* Blue logo background */
+            margin: 0 auto 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #30363d;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #1f6feb;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #21262d;
+        }
+        
+        tr:hover {
+            background-color: #1f2937;
+            transform: scale(1.02);
+            transition: 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-point"></div>
+        <h2>Divine Computer World</h2>
+        <ul>
+            <li><a href="HOME.html">🏠 Home</a></li>
+            <li><a href="product.html">💻 Products</a></li>
+            <li><a href="ABOUT US.html">📌 About Us</a></li>
+            <li><a href="CART.html">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section id="computer-sales">
+            <h2>Computer Sales</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="HUAWEI MateBook D16 Laptop, Pantalla FullView de 16 Pulgadas, Procesador Intel Core i5, 16GB de RAM, 512GB SSD, Windows 11 Home, Cuerpo Ligero de 1,68 kg, Space Gray, Versión Español.jpeg" alt="Laptop">
+                    <h3>HUAWEI MateBook</h3>
+                    <p>Core i7, 8GB RAM, 512GB SSD</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Megaport Komplett Set Gaming PC.jpeg" alt="Desktop">
+                    <h3>Gaming Desktop</h3>
+                    <p>Ryzen 9, 32GB RAM, RTX 3080</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Sony FE 24-105mm F4 G OSS Sony E-mount Camera Lens Full-frame Digital SLR PNG - Free Download.jpeg" alt="Desktop">
+                    <h3>Camera</h3>
+                    <p>Sony FE 24-105mm F4 G OSS Sony E-mount Camera Lens Full-frame Digital SLR</p>
+                    <button>Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+        <section id="networking">
+            <h2>Networking</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="【2020 Newest】 Smart WiFi Router Dual Band Gigabit Wireless Internet Router.jpeg" alt="Router">
+                    <h3>Wireless Router</h3>
+                    <p>High-speed, dual-band router</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="product-card">
+                    <img src="Server rack stock illustration_ Illustration of online - 21100691.jpeg" alt="Server">
+                    <h3>Server Setup</h3>
+                    <p>Custom server configuration</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="web-development">
+            <h2>Web Development</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="web.jpeg" alt="Website">
+                    <h3>E-commerce Website</h3>
+                    <p>Fully functional online store</p>
+                    <button>Get Quote</button>
+                </div>
+                <div class="product-card">
+                    <img src="web design.jpeg" alt="Portfolio">
+                    <h3>Portfolio Website</h3>
+                    <p>Showcase your work online</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="software-development">
+            <h2>Software Development</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="MAD.jpeg" alt="App">
+                    <h3>Mobile App Development</h3>
+                    <p>Custom mobile applications</p>
+                    <button>Contact Us</button>
+                </div>
+                <div class="product-card">
+                    <img src="3D APP DEV.PNG" alt="Software">
+                    <h3>Custom Software</h3>
+                    <p>Tailored software solutions</p>
+                    <button>Get Quote</button>
+                </div>
+            </div>
+        </section>
+        <h2>Product Details</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Price (UGX)</th>
+                        <th>Stock</th>
+                        <th>Buy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>101</td><td>HUAWEI MateBook</td><td>UGX 1,200,000</td><td>178,230</td><td><button class="btn" onclick="addToCart('HUAWEI MateBook', 1200000)">Add to Cart</button></td></tr>
+                    <tr><td>102</td><td>Dell Laptop</td><td>UGX 850,000</td><td>200,230</td><td><button class="btn" onclick="addToCart('Dell Laptop', 850000)">Add to Cart</button></td></tr>
+                    <tr><td>102</td><td>MacBook</td><td>UGX 3,000,000</td><td>8,230</td><td><button class="btn" onclick="addToCart('MacBook', 3000000)">Add to Cart</button></td></tr>
+                </tbody>            
+            </table>
+    </main>
+    <script>
+        function sortTable(column) {
+            let table = document.getElementById("productTable");
+            let rows = Array.from(table.rows).slice(1);
+            rows.sort((rowA, rowB) => rowA.cells[column].innerText.localeCompare(rowB.cells[column].innerText));
+            table.tBodies[0].append(...rows);
+        }
+    
+        function addToCart(product, price) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({ product, price });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(product + " added to cart!");
+        }
+    </script>
+</body>
+</html>
